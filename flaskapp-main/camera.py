@@ -7,8 +7,6 @@ mp_face = mp.solutions.face_detection.FaceDetection(model_selection=1,min_detect
 width=640
 height=480
 
-  
-
 def obj_data(img):
     image_input = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     results = mp_face.process(image_input)
